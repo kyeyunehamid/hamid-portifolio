@@ -1,0 +1,225 @@
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Add the navigation design below */
+
+nav {
+    background-color: #023e8a;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: blue;
+}
+
+/* Hero/Home styles */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 20px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    color: #023e8a;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+}
+
+.hero-text p {
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+/* Cards styles */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f8f9fa;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.15);
+    border-top: 5px solid #0077b6;
+}
+
+.card h3 {
+    color: #023e8a;
+}
+
+.card p {
+    color: #333;
+}
+
+.card a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* About styles*/
+
+.about-container {
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-text {
+    background: #f8f9fa;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.about-text h3 {
+    color: #023e8a;
+    text-align: center;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* contact styles */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contact-card, .qr-card {
+    background: #023e8a;
+    color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.qr-card img {
+    width: 180px;
+    margin-top: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* mobile css section*/
+
+@media (max-width: 768px) {
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

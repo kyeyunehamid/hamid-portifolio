@@ -15,28 +15,28 @@ p {
 /* Add the navigation design below */
 
 nav {
-    background-color: #023e8a;
+    background: #023e8a;
     padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
-}
+    align-items: center;
+    gap: 25px;
 
-nav a:hover{
-    color: yellow;
-}
-
-nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: blue;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #90e0ef;
 }
 
 /* Hero/Home styles */
